@@ -182,4 +182,13 @@ vim.pack.add {
 require('java').setup()
 vim.lsp.enable 'jdtls'
 
+vim.pack.add {
+    'https://github.com/folke/snacks.nvim',
+    'https://github.com/coder/claudecode.nvim',
+}
+
+require('claudecode').setup {
+    auto_start = false,
+    log_level = 'error',
+}
 
